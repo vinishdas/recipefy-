@@ -1,0 +1,267 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    color:  #100c08;
+    /* border:1px solid #cb22cb; */
+}
+:root{
+  --main_color: #F7A072;
+  --text:#100c08 ;
+  --complement:#46b3ee;
+  --primary-font:'Sarabun', sans-serif;
+  --roboto:  'Roboto', sans-serif;
+  --playfair:  'Playfair Display', serif;
+}
+body{
+    background-color:  #FEFCFD;
+}
+.navbar{
+    border-color: aqua;
+    display: flex;
+    align-items:center;
+    margin: 5px;
+    padding: 5px;
+    justify-content: space-between;
+    
+}
+#logo{
+    font-family: 'Playfair Display', serif;
+    font-weight: bolder;
+    margin-left: 25px;
+    padding: 10px;
+    font-size: 40px;
+}
+.signIn button{
+    background-color:var(--main_color);
+    width: 130px;
+    border: none;
+    font-size: 23px;
+    padding: 10px;
+    margin-right:23px;
+    margin-top: 10px;
+    border-radius: 5px;
+    position: relative;
+    transition: all 0.3s;
+}
+.signIn button:hover{
+    
+    background-color:var(--complement) ;
+    font-size: 25px;
+    box-shadow:  1px 1px 50px 5px rgb(181, 226, 250,3);
+}
+.mid {
+    width: 500px;
+}
+.mid ul {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  list-style-type: none;
+}
+  
+  .iteams {
+    position: relative;
+    transition: all 0.2s;
+  }
+  
+  
+  .iteams::after {
+    content: "";
+    position: absolute;
+    left: 25%;
+    bottom: 0;
+    width: 50%; /* Smaller underline width (adjust the percentage as needed) */
+    height: 2px;
+    background-color:var(--complement); /* Change to your desired underline color */
+    transform-origin: bottom;
+    transform: scaleX(0); /* Initially, no underline */
+    transition: transform 0.2s;
+    display: block;
+  }
+  .iteams a {
+    text-decoration: none;
+    padding: 5px 20px;
+    display: inline-block;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: lighter;
+  }
+  
+  
+  .iteams:hover {
+    transform: translate(0px, -3px);
+  }
+  
+  .iteams:hover::after {
+    transform: scaleX(1); /* Show the underline on hover */
+  }
+  .introduction{
+    padding: 20px;
+     
+    display: inline-block;
+    width: 700px;
+    margin-top: 100px;
+    margin-left: 90px; 
+  }
+  .introduction h2{
+    color:var(--);
+    padding: 5px;
+    margin: 5px;
+    font-size: 50px;
+    font-family: var(--playfair);
+  }
+  .introduction p{
+    line-height:30px;
+    width: 600px;
+    font-weight: 300;
+    font-size: 27px;
+    font-family: var(--);
+    /* letter-spacing: 1.5px; */
+    word-spacing: 2px;
+    text-align: left;
+    padding: 5px;
+    margin: 5px;
+
+  }
+  .illustraion img{
+    padding: 20px;
+     
+    /* display: inline-block; */
+     image-rendering:optimizeQuality;
+    margin-top: 90px;
+    margin-left: 110px; 
+    width: 600px;
+    height: auto;
+    /* display: inline-block; */
+  }
+  .aboutme{
+    /* margin: auto; */
+    display: flex;
+  }
+  .card_container{
+    width: 85%;
+    /* margin-left: 2.5%; */
+    margin: 5% auto ;
+    /* margin-top: 5%; */
+    border-radius: 5px;
+    height: 300px;
+    margin-bottom: 5%;
+    display: flex;  
+    flex-flow: row wrap;
+    /* align-items: center; */
+    justify-content: space-evenly;
+  }
+  .card_container span{
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    text-decoration-thickness:2px;
+    display: block;
+    margin: auto ;
+    position: absolute;
+    padding: 10px;
+    left: 45.5%;
+    font-size:25px;
+    font-family: var(--playfair);
+    font-weight: bold;
+    word-spacing: 2px;
+    letter-spacing: 0.5px;
+    
+  }
+  .card  {
+    position: relative;
+    /* border: 2px solid rgb(38, 0, 255); */
+    /* justify-self: center; */
+    align-self: center;
+    width: 300px;
+    height: 200px;
+    text-align: center;
+    padding: 30px;
+    border-radius: 20px;
+    background-color: var(--main_color);
+    margin-top: 100px;
+    box-shadow: 0px 0px 5px 4px rgb(247, 160, 114,0.1);
+    transition: all 0.3s;
+    
+
+  }
+.card:hover{
+  transform: translate(0px ,-15px);
+  /* filter:blur(5px); */
+}
+
+  
+  .card img {
+    aspect-ratio: 1.3;
+    width: 100px;
+    height: auto;
+  }
+  .card h3{
+    font-family: var(--primary-font);
+    font-size: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .card p{
+    /* width:200px; */
+    padding-top: 5px;
+    font-family: var(--primary-font);
+    font-size: 20px;
+    /* font-style: italic; */
+    text-align: center;
+  }
+  .banner{
+
+    border-top: 6px solid rgb(70, 70, 70);
+    display: flex;
+    height: 200px;
+    margin-top: 200px;
+    background-color: var(--main_color);
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+  }
+.icon{
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+  .social a img{
+  position: relative;
+  margin: 10px;
+  height: auto;
+  width: 70px;
+  padding: 10px;
+ transition: all 0.2s;
+ opacity: 50%;
+  }
+  .social a img:hover{
+    /* filter: invert(); */
+    opacity: 100%;
+    transform: scale(115%,115%);
+    /* width: 75px; */
+  }
+  .banner p{
+    font-family: monospace;
+    font-size: 15px;
+  font-weight: bold;
+  /* opacity: 0.5; */
+  }
+
+  /* For Webkit browsers (including Chrome) */
+::-webkit-scrollbar {
+  width: 9px; /* Set the width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background-color: none; /* Set the color of the scrollbar track */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #ccc; /* Set the color of the scrollbar thumb */
+  border-radius: 4px; /* Set the border-radius to round the corners */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #e4992a; /* Change the color on hover */
+}
